@@ -64,20 +64,11 @@
         fbq('init', '263538075367301');
         fbq('track', 'PageView');
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=263538075367301&ev=PageView&noscript=1"
-/></noscript>
 
-    <meta name="facebook-domain-verification" content="uqp19u47k7swx6p957op6nxly20z88" />
 </head>
 
 <body data-affiliate-param="affiliate_id" data-show-progress="true">
     
-   
-    <svg xmlns="http://www.w3.org/2000/svg" style="display: none !important">
-<filter id="grayscale">
-<fecolormatrix type="matrix" values="0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0"></fecolormatrix>
-</filter>
 <style>
    
 
@@ -158,6 +149,48 @@
     });
 </script>
 
+<style>
+    .fade-in {
+        opacity: 0;
+        transform: translateY(20px); /* Start 20px below its normal position */
+        transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Smooth transition */
+    }
+    
+    .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0); /* Return to its original position */
+    }
+    </style>
+    
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const fadeInElements = document.querySelectorAll('.fade-in');
+
+    const options = {
+        root: null, // Use the viewport as the container
+        rootMargin: '0px',
+        threshold: 1 // Trigger when at least 10% of the element is in view
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target); // Stop observing once it's visible
+            }
+        });
+    }, options);
+
+    fadeInElements.forEach(element => {
+        observer.observe(element);
+    });
+});
+
+</script>
+                            
+
 
     
 
@@ -166,20 +199,24 @@
 
 
 
-                <div class="row bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" id="row--44976" data-trigger="none" data-animate="fade" data-delay="500" data-title="2 column row" style="padding-top: 20px; padding-bottom: 20px; margin: 0px; outline: none;">
-                    <div id="col-left-125" class="col-md-6 innerContent col_left ui-resizable" data-col="left" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
+                <div class="row bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin fade-in" id="row--44976" data-trigger="none" data-animate="fade" data-delay="500" data-title="2 column row" style="padding-top: 20px; padding-bottom: 20px; margin: 0px; outline: none;">
+                    <div id="col-left-125" class="col-md-6 innerContent col_left ui-resizable fade-in " data-col="left" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
+
+
                         <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
                             <div class="de elCustomJs elMargin0 ui-droppable de-editable" id="tmp_customjs-66494-177-132-102" data-de-type="customjs" data-de-editing="false" data-title="Custom JS / HTML" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 10px; outline: none; cursor: pointer;"
                                 aria-disabled="false" data-hide-on="desktop">
                                 <div class="elCustomJSBg">CUSTOM JAVASCRIPT / HTML</div>
                                 <div class="elCustomJS_code"  data-displaytype="htmlregular">
                                     <!-- Début de widget en ligne Calendly -->
-<div class="calendly-inline-widget" data-url="https://calendly.com/yassine-mediatag/discovry-call" style="min-width:320px;height:700px;"></div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-<!-- Fin de widget en ligne Calendly -->
+                                    <div class="calendly-inline-widget" data-url="https://calendly.com/yassine-mediatag/discovry-call" style="min-width:320px;height:700px;"></div>
+                                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                                    <!-- Fin de widget en ligne Calendly -->
                                 </div>
                             </div>
                         </div>
+
+
                     </div>
                     <div id="col-right-128" class="col-md-6 innerContent col_right ui-resizable" data-col="right" data-trigger="none" data-animate="fade" data-delay="500" data-title="2nd column" style="outline: none;">
                         <div class="col-inner bgCover  noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin" style="padding: 0 10px">
@@ -189,24 +226,24 @@
                             </div>
                             <div class="de elHeadlineWrapper ui-droppable de-editable" id="headline-14564" data-de-type="headline" data-de-editing="false" data-title="Paragraph" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 20px; outline: none; cursor: pointer; font-family: Montserrat, Helvetica, sans-serif !important;"
                                 aria-disabled="false" data-hide-on data-google-font="Montserrat">
-                                <div class="ne elHeadline hsSize1 lh5 elMargin0 elBGStyle0 hsTextShadow0 lh6 deUppercase deNormalLS mfs_16" data-bold="inherit" style="text-align: left; font-size: 20px; color: rgb(45, 45, 45);" data-gramm="false" contenteditable="false">
+                                <div class="ne elHeadline hsSize1 lh5 elMargin0 elBGStyle0 hsTextShadow0 lh6 deUppercase deNormalLS mfs_16 fade-in" data-bold="inherit" style="text-align: left; font-size: 20px; color: rgb(45, 45, 45);" data-gramm="false" contenteditable="false">
                                     <div><b>SCHEDULE YOUR CALL WITH YASSINE</b></div>
                                 </div>
                             </div>
-                            <div class="de elHeadlineWrapper ui-droppable de-editable" id="headline-22076" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: -5px; cursor: pointer; outline: none; font-family: Montserrat, Helvetica, sans-serif !important;"
+                            <div class="de elHeadlineWrapper ui-droppable de-editable fade-in" id="headline-22076" data-de-type="headline" data-de-editing="false" data-title="headline" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: -5px; cursor: pointer; outline: none; font-family: Montserrat, Helvetica, sans-serif !important;"
                                 aria-disabled="false" data-google-font="Montserrat">
                                 <div class="ne elHeadline hsSize3 lh3 elMargin0 elBGStyle0 hsTextShadow0 deCapitalize deNormalLS mfs_26" style="text-align: left; font-size: 38px; color: rgb(32, 22, 82);" data-bold="inherit" data-gramm="false" spellcheck="false" contenteditable="false"><b>Free 15-Minute Demo Call</b></div>
                             </div>
                             <div class="de elHeadlineWrapper ui-droppable de-editable" id="headline-29431" data-de-type="headline" data-de-editing="false" data-title="Paragraph" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 15px; outline: none; cursor: pointer; font-family: Montserrat, Helvetica, sans-serif !important;"
                                 aria-disabled="false" data-google-font="Montserrat">
-                                <div class="ne elHeadline hsSize1 lh5 elMargin0 elBGStyle0 hsTextShadow0 lh6 mfs_16" data-bold="inherit" style="text-align: left; font-size: 18px; color: rgb(45, 45, 45);" data-gramm="false" contenteditable="false">By the end of this Audit call, you will have a clear understanding of the next steps you can take for your business to start generating consistent and reliable results online with Funnels &amp; Paid Advertising.
+                                <div class="ne elHeadline hsSize1 lh5 elMargin0 elBGStyle0 hsTextShadow0 lh6 mfs_16 fade-in" data-bold="inherit" style="text-align: left; font-size: 18px; color: rgb(45, 45, 45);" data-gramm="false" contenteditable="false">By the end of this Audit call, you will have a clear understanding of the next steps you can take for your business to start generating consistent and reliable results online with Funnels &amp; Paid Advertising.
                                     <div>
                                         <div><br></div>
                                         <div>Find a time on Yassine's calendar to schedule your call today and we look forward to speaking to you soon!</div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="de elCustomJs elMargin0 ui-droppable de-editable" id="customjs-92378" data-de-type="customjs" data-de-editing="false" data-title="Custom JS / HTML" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 10px; outline: none; cursor: pointer;"
+                            <div class="de elCustomJs elMargin0 ui-droppable de-editable fade-in" id="customjs-92378" data-de-type="customjs" data-de-editing="false" data-title="Custom JS / HTML" data-ce="false" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 10px; outline: none; cursor: pointer;"
                                 aria-disabled="false" data-hide-on="mobile">
                                 <div class="elCustomJSBg">CUSTOM JAVASCRIPT / HTML</div>
                                 <div class="elCustomJS_code" data-custom-js="<!-- Calendly inline widget begin -->
@@ -214,7 +251,7 @@
 &lt;script type=&quot;text/javascript&quot; src=&quot;https://assets.calendly.com/assets/external/widget.js&quot;&gt;&lt;/script&gt;
 <!-- Calendly inline widget end -->" data-displaytype="htmlregular"></div>
                             </div>
-                            <div class="de elHeadlineWrapper ui-droppable de-editable" id="headline-20442-100-176-143" data-de-type="headline" data-de-editing="false" data-title="Paragraph" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 20px; outline: none; cursor: pointer; font-family: Montserrat, Helvetica, sans-serif !important;"
+                            <div class="de elHeadlineWrapper ui-droppable de-editable fade-in" id="headline-20442-100-176-143" data-de-type="headline" data-de-editing="false" data-title="Paragraph" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" style="margin-top: 20px; outline: none; cursor: pointer; font-family: Montserrat, Helvetica, sans-serif !important;"
                                 aria-disabled="false" data-hide-on data-google-font="Montserrat">
                                 <div class="ne elHeadline hsSize1 lh5 elMargin0 elBGStyle0 hsTextShadow0 lh6 deUppercase deNormalLS mfs_16" data-bold="inherit" style="text-align: left; font-size: 20px; color: rgb(45, 45, 45);" data-gramm="false" contenteditable="false">
                                     <div>
@@ -222,7 +259,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="de elBullet elMargin0 ui-droppable mfs_16 de-editable" id="tmp_list-35246-124-128-140" data-de-type="list" data-de-editing="false" data-title="icon bullet list" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" data-gramm="false"
+                            <div class="de elBullet elMargin0 ui-droppable mfs_16 de-editable fade-in" id="tmp_list-35246-124-128-140" data-de-type="list" data-de-editing="false" data-title="icon bullet list" data-ce="true" data-trigger="none" data-animate="fade" data-delay="500" data-gramm="false"
                                 style="margin-top: 15px; outline: none; cursor: pointer; font-family: Montserrat, Helvetica, sans-serif !important;" aria-disabled="false" data-hide-on data-google-font="Montserrat">
                                 <ul class="ne elBulletList elBulletListNew elBulletList2 listBorder0" data-bold="inherit" data-gramm="false" contenteditable="false" style="color: rgb(45, 45, 45);">
                                     <li style="font-size: 16px;">
@@ -333,161 +370,11 @@
             border-radius: 10px;
         }
     </style>
-    <input type="hidden" value="39612094" id="page-id">
-    <input type="hidden" value="39612094" id="root-id">
-    <input type="hidden" value="core" id="variant-check">
-    <input type="hidden" value="1085259" id="user-id">
-    <input type="hidden" value id="cf-cid">
-    <input type="hidden" value="false" id="cf-page-oto">
-    <input type="hidden" value="false" id="ff-can-use-payment-intent-on-funnel-payments">
-   
-    <script src="https://app.clickfunnels.com/assets/lander.js"></script>
-    <div id="fb-root"></div>
-    <script>
-        window.addEventListener('load', function() {
-            (function(d, s, id) {
-                if ($('.fbCommentsPlaceholder').size() > 0) {
-                    var js, fjs = d.getElementsByTagName(s)[0];
-                    if (d.getElementById(id)) {
-                        return;
-                    }
-                    js = d.createElement(s);
-                    js.id = id;
-                    js.src = "https://connect.facebook.net/en_US/sdk.js";
-                    fjs.parentNode.insertBefore(js, fjs);
-                }
-            }(document, 'script', 'facebook-jssdk'));
-        });
-    </script>
-    <script>
-        window.cfFacebookInitOptions = {
-            appId: 246441615530259,
-            autoLogAppEvents: false,
-            status: true,
-            xfbml: true,
-            version: "v3.3"
-        };
-        window.fbAsyncInit = function() {
-            FB.init(window.cfFacebookInitOptions);
-
-            // Iterates over all .fb-comments elements on the page, and renders them using the FB SDK.
-            // It only runs if we have not told the FB.init() to render XFBML on page load
-            var renderFacebookComments = function(renderXFBMLAtLoadTime) {
-                // If we have already marked XFBML to render at page load time, do not proceed.
-                if (renderXFBMLAtLoadTime) {
-                    return;
-                }
-
-                var comments = document.getElementsByClassName('fb-comments');
-                var i = 0;
-                var len = comments.length;
-                var comment = null;
-                for (; i < len; i++) {
-                    comment = comments[i];
-                    FB.XFBML.parse(comment.parentElement); // comments need to be rendered/parsed from their parent element.
-                }
-            }
-
-            renderFacebookComments(true);
-        };
-    </script>
-    <!--[if lt IE 9]>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
-<![endif]-->
+ 
     
-    <form target="_parent" data-cf-form-action="true" action="https://imangadzhi.clickfunnels.com/roi-c" method="post" id="cfAR" style="display:none">
-        <span data-cf-form-fields="true"></span>
-        <input id="cf_contact_name" name="contact[name]" data-cf-form-field="name" placeholder="name" data-stripe="name">
-        <input id="cf_contact_first_name" name="contact[first_name]" data-cf-form-field="first_name" placeholder="first_name" data-recurly="first_name">
-        <input id="cf_contact_last_name" name="contact[last_name]" data-cf-form-field="last_name" placeholder="last_name" data-recurly="last_name">
-        <input id="cf_contact_email" name="contact[email]" data-cf-form-field="email" placeholder="email">
-        <input id="cf_contact_phone" name="contact[phone]" data-cf-form-field="phone" placeholder="phone" data-recurly="phone">
-        <input id="cf_contact_address" name="contact[address]" data-cf-form-field="address" placeholder="address" data-stripe="address_line1" data-recurly="address1">
-        <input id="cf_contact_city" name="contact[city]" data-cf-form-field="city" placeholder="city" data-stripe="address_city" data-recurly="city">
-        <input id="cf_contact_state" name="contact[state]" data-cf-form-field="state" placeholder="state" data-stripe="address_state" data-recurly="state">
-        <input id="cf_contact_country" name="contact[country]" data-cf-form-field="country" placeholder="country" data-stripe="address_country" data-recurly="country">
-        <input id="cf_contact_zip" name="contact[zip]" data-cf-form-field="zip" placeholder="ZIP" data-stripe="address_zip" data-recurly="postal_code">
-        <input id="cf_contact_shipping_address" name="contact[shipping_address]" data-cf-form-field="shipping_address" placeholder="shipping_address" data-stripe="shipping_address">
-        <input id="cf_contact_shipping_city" name="contact[shipping_city]" data-cf-form-field="shipping_city" placeholder="shipping_city" data-stripe="shipping_city">
-        <input id="cf_contact_shipping_state" name="contact[shipping_state]" data-cf-form-field="shipping_state" placeholder="shipping_state" data-stripe="shipping_state">
-        <input id="cf_contact_shipping_country" name="contact[shipping_country]" data-cf-form-field="shipping_country" placeholder="shipping_country" data-stripe="shipping_country">
-        <input id="cf_contact_shipping_zip" name="contact[shipping_zip]" data-cf-form-field="shipping_zip" placeholder="shipping_ZIP" data-stripe="shipping_zip">
-        <input id="cf_contact_vat_number" name="contact[vat_number]" data-cf-form-field="vat_number" data-recurly="vat_number">
-        <input id="cf_contact_affiliate_id" name="contact[affiliate_id]" data-cf-form-field="affiliate_id" data-param="affiliate_id">
-        <input id="cf_contact_cf_affiliate_id" name="contact[cf_affiliate_id]" data-cf-form-field="cf_affiliate_id" data-param="cf_affiliate_id">
-        <input id="cf_cf_affiliate_id" name="cf_affiliate_id" data-param="cf_affiliate_id">
-        <input id="cf_contact_affiliate_aff_sub" name="contact[aff_sub]" data-cf-form-field="aff_sub" data-param="aff_sub">
-        <input id="cf_contact_affiliate_aff_sub2" name="contact[aff_sub2]" data-cf-form-field="aff_sub2" data-param="aff_sub2">
-        <input id="cf_contact_time_zone" name="time_zone" data-cf-form-field="time_zone" placeholder="time_zone">
-        <input id="utm_source" name="utm_source" data-cf-form-field="utm_source" data-param="utm_source">
-        <input id="utm_medium" name="utm_medium" data-cf-form-field="utm_medium" data-param="utm_medium">
-        <input id="utm_campaign" name="utm_campaign" data-cf-form-field="utm_campaign" data-param="utm_campaign">
-        <input id="utm_term" name="utm_term" data-cf-form-field="utm_term" data-param="utm_term">
-        <input id="utm_content" name="utm_content" data-cf-form-field="utm_content" data-param="utm_content">
-        <input id="cf_uvid" name="cf_uvid" data-cf-form-field="cf_uvid">
-        <input type="text" name="webinar_delay" id="webinar_delay" placeholder="Webinar Delay">
-        <span data-cf-product-template="true">
-<input type="radio" name="purchase[product_id]" value data-storage="false">
-<input type="checkbox" name="purchase[product_ids][]" value data-storage="false">
-</span>
-        <span data-cf-product-variations-template="true">
-<input type="checkbox" class="pvPurchaseProductName" name="purchase[product_variants][][product_id]" value data-storage="false">
-<input type="checkbox" class="pvPurchaseProductVariantName" name="purchase[product_variants][][product_variant_id]" value data-storage="false">
-<input type="input" class="pvPurchaseProductVariantQuantity" name="purchase[product_variants][][quantity]" value data-storage="false">
-</span>
-        <input id="cf_contact_number" data-stripe="number" data-storage="false" data-recurly="number">
-        <input id="cf_contact_month" data-stripe="exp-month" data-storage data-recurly="month">
-        <input id="cf_contact_year" data-stripe="exp-year" data-storage data-recurly="year">
-        <input id="cf_contact_month_year" data-stripe="exp" data-storage>
-        <input id="cf_contact_cvc" data-stripe="cvc" data-storage="false" data-recurly="cvv">
-        <input type="hidden" name="purchase[payment_method_nonce]" data-storage="false">
-        <input type="hidden" name="purchase[order_saas_url]" data-storage="false">
-        <input type="submit">
-        <input name="contact[cart_affiliate_id]" value type="hidden" style="display:none;" data-param="affiliate">
-    </form>
-    <span class="countdown-time" style="display:none;"></span>
-    <span class="webinar-last-time" style="display:none;"></span>
-    <span class="webinar-ext" style="display:none;"></span>
-    <span class="webinar-ot" style="display:none;"></span>
-    <span class="contact-created" style="display:none;"></span>
-    <script>
-    </script>
-    <div class="otoloading" style="display: none;">
-        <div class="otoloadingtext">
-            <h2>Working...</h2>
-            <div><i class="fa fa-spinner fa-spin"></i></div>
-        </div>
-    </div>
-    <script type="text/javascript">
-        document.createElement('video');
-        document.createElement('audio');
-        document.createElement('track');
-    </script>
-    <style>
-        #IntercomDefaultWidget {
-            display: none;
-        }
-
-        .selectAW-date-demo,
-        .elTicketAddToCalendar,
-        .elTicketAddToCalendarV2 {
-            display: none;
-        }
-
-        .video-js {
-            padding-top: 56.25%;
-        }
-
-        .vjs-big-play-button,
-        .vjs-control-bar {
-            z-index: 10 !important;
-        }
-
-        .vjs-fullscreen {
-            padding-top: 0;
-        }
-    </style>
-
+  
+  
+    
   
 </body>
 
