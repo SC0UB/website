@@ -1007,7 +1007,7 @@ fadeInElements.forEach(element => {
                             style="margin-top: 15px; outline: none; cursor: pointer; font-family: Montserrat, Helvetica, sans-serif !important;" aria-disabled="false" data-hide-on data-google-font="Montserrat">
                             <ul class="ne elBulletList elBulletListNew elBulletList2 listBorder0" data-bold="inherit" data-gramm="false" contenteditable="false" style="color: rgb(45, 45, 45);">
                                 <li style="font-size: 16px; "  class="fade-in">
-                                    <i contenteditable="false" class="fa-fw fas fa-check-circle fade-in" style="color: rgb(252, 55, 146);"></i>Businesses looking to convert their curre    t website into a <b>high quality &amp; streamlined funnel format.</b>
+                                    <i contenteditable="false" class="fa-fw fas fa-check-circle fade-in" style="color: rgb(252, 55, 146);"></i>Businesses looking to convert their current website into a <b>high quality &amp; streamlined funnel format.</b>
                                 </li>
                                 <li style="font-size: 16px;" class="fade-in">
                                     <i contenteditable="false" class="fa-fw fas fa-check-circle fade-in" style="color: rgb(252, 55, 146);"></i>​Businesses looking to take their offline business <b>online</b><br>
@@ -2063,17 +2063,18 @@ fadeInElements.forEach(element => {
     </div>
 
 <style>
-        .snap {
-      scroll-snap-align: start; 
-
+  @media (min-width: 768px) { /* Applies to devices with a width of 768px or more */
+    .snap {
+      scroll-snap-align: start;
     }
     .containerWrapper {
-     
       overflow-y: scroll;
       scroll-snap-type: y mandatory;
-      height: 100vh;  /* Vertical snapping */
+      height: 100vh; /* Vertical snapping */
     }
+  }
 </style>
+
 
 
  
