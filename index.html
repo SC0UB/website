@@ -68,7 +68,7 @@ const fadeInElements = document.querySelectorAll('.fade-in');
 const options = {
     root: null, // Use the viewport as the container
     rootMargin: '-50px',
-    threshold: 0.512 // Trigger when at least 10% of the element is in view
+    threshold: 0.700 // Trigger when at least 10% of the element is in view
 };
 
 const observer = new IntersectionObserver((entries) => {
@@ -208,7 +208,7 @@ fadeInElements.forEach(element => {
         <!--HERO SECTION-->
 
 
-        <div class="snap">
+        <div >
                  
                     <!--LOGO DIV-->
                     <div class="container fullContainer noTopMargin padding20-top padding20-bottom padding40H noBorder borderSolid border3px cornersAll radius0 shadow0 bgNoRepeat emptySection" id="section--55788" data-title="Section" data-block-color="0074C7" style="padding-top: 3px; padding-bottom: 3px; outline: none; background-color: rgb(15, 14, 36);"
@@ -452,7 +452,7 @@ fadeInElements.forEach(element => {
 
       <!--STATS SECTION-->
 
-        <div class="snap">
+        <div>
 
             <div class="container fullContainer noTopMargin padding20-top padding20-bottom padding40H noBorder borderSolid border3px cornersAll radius0 shadow0 bgNoRepeat emptySection addBonusBottomSpacing activeSection innerToolsTop" id="section--55808" data-title="Section"
             data-block-color="0074C7" style="padding-top: 20px; padding-bottom: 20px; outline: none; background-color: rgb(255, 255, 255);" data-trigger="none" data-animate="fade" data-delay="500">
@@ -530,7 +530,7 @@ fadeInElements.forEach(element => {
 
      <!--OFFER SECTION-->
 
-        <div class="snap">
+        <div >
             <div class="container fullContainer noTopMargin padding20-top padding20-bottom padding40H noBorder borderSolid border3px cornersAll radius0 shadow0 emptySection bgCover101" id="section--55808-116" data-title="Section - Clone" data-block-color="0074C7"
             style="padding-top: 20px; padding-bottom: 20px; outline: none; background-color: rgb(255, 255, 255); background-image: url(/images/Background-Header-2.png);" data-trigger="none"
             data-animate="fade" data-delay="500">
@@ -894,7 +894,7 @@ fadeInElements.forEach(element => {
 
         
 
-    <div class="snap">
+    <div >
 
         <div class="container fullContainer noTopMargin padding20-top padding20-bottom padding40H noBorder borderSolid border3px cornersAll radius0 shadow0 bgNoRepeat emptySection containerWithVisibleOverflow" id="section--86611-163" data-title="schedule-call-sect"
         data-block-color="0074C7" style="padding-top: 20px; padding-bottom: 20px; outline: none; background-color: rgb(255, 255, 255);" data-trigger="none" data-animate="fade" data-delay="500">
@@ -1074,7 +1074,7 @@ fadeInElements.forEach(element => {
        
 
 
-       <div class="snap">
+       <div >
 
         <div class="container fullContainer noTopMargin padding20-top padding20-bottom padding40H noBorder borderSolid border3px cornersAll radius0 shadow0 emptySection bgCover101 fade-in-section" id="section--55808-116-151-189" data-title="Section - Clone - Clone - Clone" data-block-color="0074C7"
        style="padding-top: 20px; padding-bottom: 20px; outline: none; background-color: rgb(255, 255, 255); background-image: url(/images/background-case-study.png);">
@@ -1166,7 +1166,7 @@ fadeInElements.forEach(element => {
 
 
 
-<div class="snap">
+<div >
 
         <div class="row bgCover noBorder borderSolid border3px cornersAll radius0 shadow0 P0-top P0-bottom P0H noTopMargin fade-in" id="row--40936" data-trigger="none" data-animate="fade" data-delay="500" data-title="2 column row" style="padding-top: 20px; padding-bottom: 20px; margin: 0px; outline: none;">
                     <div id="col-left-103" class="col-md-6 innerContent col_left ui-resizable" data-col="left" data-trigger="none" data-animate="fade" data-delay="500" data-title="1st column" style="outline: none;">
@@ -1202,7 +1202,7 @@ fadeInElements.forEach(element => {
 
     </div>
 
-<div class="snap">
+<div >
 
         <div class="container fullContainer noTopMargin padding20-top padding20-bottom padding40H noBorder borderSolid border3px cornersAll radius0 shadow0 bgCover101 emptySection" id="section--28228-129" data-title="Section - Clone" data-block-color="0074C7"
         style="padding-top: 20px; padding-bottom: 40px; outline: none; background-color: rgb(255, 255, 255); background-image: url(/images/Background-Header-5.png);" data-trigger="none"
@@ -2062,18 +2062,6 @@ fadeInElements.forEach(element => {
 
     </div>
 
-<style>
-  @media (min-width: 768px) { /* Applies to devices with a width of 768px or more */
-    .snap {
-      scroll-snap-align: start;
-    }
-    .containerWrapper {
-      overflow-y: scroll;
-      scroll-snap-type: y mandatory;
-      height: 100vh; /* Vertical snapping */
-    }
-  }
-</style>
 
 
 
