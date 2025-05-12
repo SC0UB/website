@@ -125,7 +125,7 @@ fadeInElements.forEach(element => {
             align-items: center;
             z-index: 9999;
             opacity: 1;
-            transition: opacity 0.7s ease-out; /* Smooth fade-out */
+            transition: opacity 0.5s ease-out; /* Smooth fade-out */
         }
     
         .loader.fade-out {
@@ -141,7 +141,7 @@ fadeInElements.forEach(element => {
             height: 100%; /* Fill the height of the loader */
             width: auto; /* Maintain aspect ratio */
             opacity: 0; /* Start with 0 opacity */
-            animation: fadeIn 1s forwards; /* Fade in effect */
+            animation: fadeIn .8s forwards; /* Fade in effect */
         }
     
         @keyframes fadeIn {
@@ -172,8 +172,8 @@ fadeInElements.forEach(element => {
                 setTimeout(() => {
                     loader.style.display = 'none'; // Hide loader element
                     mainContent.style.display = 'block'; // Show main content
-                }, 800); // Matches the fade-out duration
-            }, 800); // Delay before starting the fade-out
+                }, 600); // Matches the fade-out duration
+            }, 600); // Delay before starting the fade-out
         });
     </script>
  <!--END LOADER-->
