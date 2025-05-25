@@ -46,6 +46,14 @@ src="https://www.facebook.com/tr?id=881166180852163&ev=PageView&noscript=1"
 <!-- End Meta Pixel Code -->
 
 
+<script>
+  const userLang = navigator.language || navigator.userLanguage;
+
+  // Check if the browser language starts with "fr" and user is not already in /fr/
+  if (userLang.startsWith('fr') && !window.location.pathname.startsWith('/fr')) {
+    window.location.href = '/fr/';
+  }
+</script>
 
 
     
