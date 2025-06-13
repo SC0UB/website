@@ -62,7 +62,8 @@ src="https://www.facebook.com/tr?id=881166180852163&ev=PageView&noscript=1"
     <script src="https://app.clickfunnels.com/assets/userevents/application.js"></script>
     <style>
         [data-timed-style='fade'] {
-            display: none
+            
+        : none
         }
 
         [data-timed-style='scale'] {
@@ -131,9 +132,7 @@ src="https://www.facebook.com/tr?id=881166180852163&ev=PageView&noscript=1"
         pointer-events: none; /* Prevent interaction when faded out */
     }
 
-    .main-content {
-        display: none; /* Hide main content until loader fades out */
-    }
+    
 
     .loader img {
         height: 100%; /* Fill the height of the loader */
@@ -177,46 +176,9 @@ src="https://www.facebook.com/tr?id=881166180852163&ev=PageView&noscript=1"
     });
 </script>
 
-<style>
-    .fade-in {
-        opacity: 0;
-        transform: translateY(20px); /* Start 20px below its normal position */
-        transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Smooth transition */
-    }
-    
-    .fade-in.visible {
-        opacity: 1;
-        transform: translateY(0); /* Return to its original position */
-    }
-    </style>
-    
 
 
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-    const fadeInElements = document.querySelectorAll('.fade-in');
 
-    const options = {
-        root: null, // Use the viewport as the container
-        rootMargin: '0px',
-        threshold: 1 // Trigger when at least 10% of the element is in view
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target); // Stop observing once it's visible
-            }
-        });
-    }, options);
-
-    fadeInElements.forEach(element => {
-        observer.observe(element);
-    });
-});
-
-</script>
                             
 
 
